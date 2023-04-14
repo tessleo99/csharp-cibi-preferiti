@@ -12,7 +12,7 @@ Cercate per ogni richiesta che viene fatta di preparare le rispettive funzioni  
 //MAIN PROGRAM
 //PASSO 1 : dichiaro l'array
 
-using System;
+
 
 string[] favouriteFoods = { "pizza", "carbonara", "parmigiana", "spezzatino", "alici" };
 
@@ -21,7 +21,11 @@ Console.Write("La lunghezza della classifica è: " + favouriteFoods.Length);
 
 //PASSO 3 : stampare l’intero array in ordine indicando la posizione in classifica
 printElementArray(favouriteFoods);
+
+//PASSO 4 : CIBO TOP
 printFirstElementArray(favouriteFoods);
+
+//PASSO 5: CIBO MENO TOP
 printLastElementArray(favouriteFoods);
 
 
@@ -40,11 +44,13 @@ void printElementArray(string[]array)
     }
 }
 
+//PASSO 4 : CIBO TOP
 void printFirstElementArray(string[]array)
 {
     Console.WriteLine("Il primo elemento è : " + array[0]);
 }
 
+//PASSO 5: CIBO MENO TOP
 void printLastElementArray(string[]array)
 {
     for (int i = 0; i < array.Length; i++)

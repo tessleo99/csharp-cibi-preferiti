@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCibiPreferiti", "CSharpCibiPreferiti\CSharpCibiPreferiti.csproj", "{BE314A0D-836B-493A-8E9C-7CC1C7613F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonusCibiPreferiti", "BonusCibiPreferiti\BonusCibiPreferiti.csproj", "{652F9AEA-002D-49F0-BFFC-E647D1625154}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE314A0D-836B-493A-8E9C-7CC1C7613F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE314A0D-836B-493A-8E9C-7CC1C7613F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE314A0D-836B-493A-8E9C-7CC1C7613F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652F9AEA-002D-49F0-BFFC-E647D1625154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652F9AEA-002D-49F0-BFFC-E647D1625154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652F9AEA-002D-49F0-BFFC-E647D1625154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652F9AEA-002D-49F0-BFFC-E647D1625154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
