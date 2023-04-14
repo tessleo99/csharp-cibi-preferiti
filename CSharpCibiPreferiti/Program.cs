@@ -17,6 +17,23 @@ string[] favouriteFoods = { "pizza", "carbonara", "parmigiana", "spezzatino", "a
 //PASSO 2 : stampo la lunghezza della mia classifica
 Console.Write("La lunghezza della classifica è: " + favouriteFoods.Length);
 
+//PASSO 3 : stampare l’intero array in ordine indicando la posizione in classifica
+printElementArray(favouriteFoods);
+
+
+
+
+
 
 
 //FUNCTIONS
+
+//PASSO 3 : creo una funzione che mi fa stampare l’intero array in ordine indicando la posizione in classifica
+void printElementArray(string[]array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+       Console.WriteLine("- " + array[i] + " è l'elemento in posizione " + (i+1));
+  
+    }
+}
