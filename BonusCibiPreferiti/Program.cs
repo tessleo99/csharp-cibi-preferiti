@@ -13,7 +13,7 @@ In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 
 
 //MAIN PROGRAM
-//PASSO 1 : chiedo all'uente quanti cibi vuole inserire e gli faccio inserire i piatti
+//PASSO 1 : chiedo all'utente quanti cibi vuole inserire e gli faccio inserire i piatti
 
 using System;
 
@@ -39,7 +39,8 @@ printLastElementArray(favouriteFoods);
 //PASSO 6 : indici della mediana
 printMedianIndexArray(favouriteFoods);
 
-
+//PASSO 7 :indici + eleemnto della mediana
+printMedianArray(favouriteFoods);
 
 
 
@@ -98,4 +99,22 @@ void printMedianIndexArray(string[] array)
     {
         Console.WriteLine("Gli indici delli mediana sono: " + (array.Length / 2) + " e " + ((array.Length / 2) + 1) );
     }
-} 
+}
+
+//PASSO 7 : creo una funzione che mi dice sia l'elemento che l'indice mediana
+
+void printMedianArray(string[] array)
+{
+    if (array.Length % 2 == 1)
+    {
+        int index = (array.Length + 1) / 2; 
+        Console.WriteLine("La mediana è l'elemento: " + array[index - 1] + " con indice " + index );
+    }
+    else
+    {
+        int indexOne = (array.Length / 2) + 1;
+        int indexTwo = (array.Length / 2);
+        Console.WriteLine($"La mediana sono gli elementi:  {array[indexOne - 1]} e {array[indexTwo - 1]} e con rispettivi indici {indexOne} e {indexTwo}");
+     
+    }
+}
