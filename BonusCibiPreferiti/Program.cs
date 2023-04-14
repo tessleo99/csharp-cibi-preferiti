@@ -13,7 +13,7 @@ In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 
 
 //MAIN PROGRAM
-//PASSO 1 : chiedo all'uente quanti cibi vuole inserire
+//PASSO 1 : chiedo all'uente quanti cibi vuole inserire e gli faccio inserire i piatti
 
 using System;
 
@@ -36,12 +36,16 @@ printFirstElementArray(favouriteFoods);
 //PASSO 5: CIBO MENO TOP
 printLastElementArray(favouriteFoods);
 
+//PASSO 6 : indici della mediana
+printMedianIndexArray(favouriteFoods);
+
 
 
 
 
 //FUNCTIONS
 
+//PASSO 1 : creo una funzione che fa inserire all'utente i piatti
 void inputUserFavouriteFoods(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -50,7 +54,6 @@ void inputUserFavouriteFoods(string[] array)
          string userFood = Console.ReadLine();
          array[i] = userFood; 
     }
-
 }
 
 
@@ -82,3 +85,17 @@ void printLastElementArray(string[] array)
         }
     }
 }
+
+//PASSO 6 : creo una funzione che mi fa trovare l'indice della mediana 
+
+void printMedianIndexArray(string[] array)
+{
+    if (array.Length % 2 == 1)
+    {
+        Console.WriteLine("L'indice della mediana è: " + ((array.Length +1 ) /2 ) );
+    }
+    else
+    {
+        Console.WriteLine("Gli indici delli mediana sono: " + (array.Length / 2) + " e " + ((array.Length / 2) + 1) );
+    }
+} 
